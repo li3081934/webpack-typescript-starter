@@ -8,5 +8,10 @@ module.exports = {
     },
     module: {
         rules: [{ test: /\.tsx?$/, loader: "ts-loader" }]
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000
     }
 };
